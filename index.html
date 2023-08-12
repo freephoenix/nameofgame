@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>nameofgame</title>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <style>
+    .placeForGame {display:block; margin:20px 10% 20px 10%; height:350px}
+  </style>
+</head>
+<body>
+  <p>Hello!</p>
+  <div class='placeForGame'>
+  </div>
+  <p>Enjoy the game</p>
+<script src="code/levels.js"></script>
+<script src="code/body.js"></script>
+<script>
+  document.querySelector('.placeForGame').innerHTML=gamebody;
+</script>
+<script src="code/script.js"></script>
+</body>
+</html>

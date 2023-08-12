@@ -1,0 +1,54 @@
+﻿  .nameofgame {position:relative; left:0; top:0}
+  .nameofgame * {-moz-user-select:none; -ms-user-select:none; -o-user-select:none; -webkit-user-select:none; font-size:10pt; font-family:sans-serif;}
+  .nameofgame .controlPanel {visibility:hidden; position:absolute; z-index:1; width:100%; height:100%;}
+  .nameofgame .menuButton {background-color:#f63; padding:10px; display:inline-block;}
+  .nameofgame .gameMenu {margin:0;}
+  .nameofgame .notice {background-color:#f63; display:block; position:absolute; padding:10px; top:25%; left:50%; margin:-50px 0 0 -50px; text-align:center}
+  .nameofgame .notice div {padding:10px; display:inline-block}
+  .nameofgame .connectionDialog {background-color:#f63; display:table; margin:0; white-space:nowrap; text-align:center; position:absolute}
+  .nameofgame .menuButton:hover, .nameofgame .notice .active:hover, .nameofgame .connectionDialog div:hover {background-color:#f96}
+  .nameofgame .connectionDialog div {padding:2px;}
+  .nameofgame .row {display:inline-block; vertical-align:text-top; text-align:center;}
+  .nameofgame table {border-top:1px solid black; border-collapse:collapse; width:300px}
+  .nameofgame .tableScroll {width:300px; height:100px; overflow-x:auto;}
+  .nameofgame .usersTable td {width:70px;}
+  .nameofgame table tr {text-align:center; table-layout:fixed;}
+  .nameofgame table .active:hover {background-color:#69e}
+  .nameofgame th {border:1px solid black;}
+  .nameofgame td {white-space:nowrap; padding:2px;}
+  .nameofgame .options table {width:250px}
+  .nameofgame .setButton {width:100px}
+
+  .nameofgame .controlPanel ul li {padding:2px; display:block}
+  .nameofgame .controlPanel>ul>li, .nameofgame .controlPanel>ul {display:inline-block}
+  .nameofgame .controlPanel ul {
+    position:absolute;
+    marggin:0;
+    padding:0;
+    background-color:#f63;
+  }
+  .nameofgame .controlPanel ul > li:hover {background-color:#f96}
+  .nameofgame .controlPanel ul ul{
+    display:none;
+    position:absolute;
+    background-color:#369;
+    margin-top:2px;
+    margin-left:-2px;
+  }
+  .nameofgame .controlPanel ul ul > li:hover {background-color:#69e;}
+  .nameofgame .mobileButtons {position:absolute; width:100%; height:80px; bottom:0; right:0;}
+  .nameofgame .chat {visibility:hidden; position:absolute; top:0; right:80px; bottom:0; left:160px; padding:2px; overflow:auto; background-color:rgba(0,0,0,0.2); color:white; text-shadow:1px 1px 1px rgba(0,0,0,0.5), -1px 1px 1px rgba(0,0,0,0.5); border:0.5px dashed rgb(200,200,200);}
+
+  /*мобильная версия*/
+  @media screen and (max-device-width: 1023px) {
+    .nameofgame .mobileButtons {visibility:visible;}
+    .nameofgame .mobileButtons input {float:left; height:80px; width:80px; font-size:40pt; color:rgb(224,95,215); background:rgba(0,0,0,0); border-color:rgb(216,225,43);}
+    .nameofgame .mobileButtons input:last-child {float:right;}
+    .nameofgame .buttonSetters {display:none}
+    .nameofgame .controlPanel ul li, .nameofgame .connectionDialog div {padding:5px;}
+    .nameofgame .controlPanel ul ul{margin-top:5px;margin-left:-5px;}
+  }
+
+  /*локализация языка*/
+  *[data-lang-en]:lang(en)::before {content:attr(data-lang-en)}
+  *[data-lang-ru]:lang(ru)::before {content:attr(data-lang-ru)}
